@@ -13,14 +13,15 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="navBar">
         <img src="./images/logo.png" class="logo" />
         <ul class="nav-links">
-          <li><a href="#">Popular Places</a></li>
+          <li><a href="#" class="active">Popular Places</a></li>
           <li><a href="#">Travel Outside</a></li>
           <li><a href="#">Online Packages</a></li>
         </ul>
         <a href="#" class="register-btn">Register Now</a>
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
       </nav>
       <div class="container">
         <h1>Find Your Next Stay</h1>
@@ -215,5 +216,13 @@
         <p>Copyright @ 2022,Maryam Karimiyan</p>
       </footer>
     </div>
+
+
+    <script>
+        const navBar=document.querySelector('#navBar');
+        function togglebtn(){
+            navBar.classList.toggle("hidemenue");
+        }
+    </script>
   </body>
 </html>
